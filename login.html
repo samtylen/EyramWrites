@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styling -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Login</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"
+          ><h1 class="logo-text"><span> Eyram</span>Writes</h1></a
+        >
+      </div>
+      <i class="fa fa-bars menu-toggle"></i>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Our Team</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <!-- <li><a href="#">Sign Up</a></li>
+      <li><a href="#">Login</a></li> -->
+        <li>
+          <a href="index.html">
+            <i class="fa fa-user"></i> Lady Eyram
+            <i class="fa fa-chevron-down" style="font-size: 0.8em"></i>
+          </a>
+          <ul>
+            <li><a href="login.html">Dashboard</a></li>
+            <li><a href="index.html" class="logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+
+    <div class="auth-content">
+      <form action="login.html" method="post">
+        <h2 class="form-title">Login</h2>
+
+        <div>
+          <label>Username</label>
+          <input type="text" name="username" class="text-input" />
+        </div>
+        <div>
+          <label>Password</label>
+          <input type="password" name="password" class="text-input" />
+        </div>
+        <div class="btn-container">
+          <button type="submit" name="login-btn" class="btn btn-big">
+            Login
+          </button>
+          <a href="register.html">
+            <button type="button" name="login-btn" class="btn btn-big" >
+              Sign Up
+            </button>
+          </a>
+        </div>
+      </form>
+    </div>
+
+    <!-- JQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom Script -->
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
